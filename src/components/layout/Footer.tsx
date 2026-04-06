@@ -44,19 +44,19 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-          <p className="text-[10px] uppercase tracking-[0.2em] text-white/30">
-            &copy; {currentYear} Travel Co. Bespoke Concierge. All Rights Reserved.
+        <div className="border-t border-white/10 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-white/50 text-center md:text-left">
+            &copy; {currentYear} Travel Co. Bespoke Concierge. <span className="hidden md:inline">|</span> <br className="md:hidden" /> All Rights Reserved.
           </p>
-          <div className="flex items-center gap-6 text-[9px] uppercase tracking-[0.3em] text-white/40">
-            <span className="hover:text-accent cursor-pointer whitespace-nowrap">Member of IATA</span>
-            <span className="w-px h-3 bg-white/10 hidden md:block" />
-            <span className="hover:text-accent cursor-pointer whitespace-nowrap">CLIA Preferred Partner</span>
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-4 text-[10px] uppercase tracking-[0.4em] font-medium">
+            <span className="hover:text-accent cursor-pointer text-white/70 transition-colors">Member of IATA</span>
+            <span className="w-px h-4 bg-white/20 hidden md:block" />
+            <span className="hover:text-accent cursor-pointer text-white/70 transition-colors">CLIA Preferred Partner</span>
           </div>
         </div>
 
-        <div className="mt-32 text-center select-none pointer-events-none opacity-[0.02]">
-          <h1 className="text-[15vw] font-serif tracking-[0.2em] uppercase leading-none">
+        <div className="mt-48 text-center select-none pointer-events-none opacity-[0.015]">
+          <h1 className="text-[18vw] font-serif tracking-[0.4em] uppercase leading-none">
             Travel Co.
           </h1>
         </div>
