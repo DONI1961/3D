@@ -20,7 +20,7 @@ export function GlobeShowcase() {
         <img
           src="/globe-loop.png"
           alt="Globe Background"
-          className="w-full h-full object-cover scale-110 opacity-40 blur-[2px]"
+          className="w-full h-[120%] object-cover scale-110 opacity-30 blur-[1px] translate-y-[-10%]"
         />
       </div>
 
@@ -48,9 +48,9 @@ export function GlobeShowcase() {
               transition={{ delay: 0.2 + index * 0.1 }}
               className="group"
             >
-              <div className="text-4xl md:text-5xl font-serif mb-4 flex items-baseline justify-center">
+              <div className="text-5xl md:text-6xl font-serif mb-4 flex items-baseline justify-center tracking-normal">
                 {stat.value}
-                <span className="text-sm font-sans ml-1 text-accent">{stat.unit}</span>
+                <span className="text-xs font-sans ml-2 text-accent/80 font-medium">{stat.unit}</span>
               </div>
               <div className="text-[9px] text-white/40 group-hover:text-white transition-colors">
                 {stat.label}

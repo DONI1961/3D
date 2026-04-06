@@ -31,7 +31,7 @@ const destinations = [
 
 export function Destinations() {
   return (
-    <section id="destinations" className="relative z-20 py-32 px-6 bg-background">
+    <section id="destinations" className="relative z-20 py-48 px-6 bg-background -mt-2">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
@@ -76,17 +76,17 @@ export function Destinations() {
               <img
                 src={dest.image}
                 alt={dest.name}
-                className="absolute inset-0 h-full w-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000 ease-out"
+                className="absolute inset-0 h-full w-full object-cover grayscale-[100%] brightness-[0.4] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-110 transition-all duration-1000 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-60" />
               
-              <div className="absolute bottom-10 left-10 right-10">
-                <p className="text-[10px] uppercase tracking-[0.3em] text-accent mb-2">
+              <div className="absolute bottom-12 left-10 right-10">
+                <p className="text-[9px] uppercase tracking-[0.5em] text-accent mb-4 font-bold">
                   {dest.category}
                 </p>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-2xl font-serif tracking-widest uppercase">{dest.name}</h3>
-                  <ArrowUpRight className="text-white/20 group-hover:text-accent transition-colors" size={24} />
+                <div className="flex justify-between items-center gap-4">
+                  <h3 className="text-3xl font-serif tracking-[0.2em] uppercase leading-tight">{dest.name}</h3>
+                  <ArrowUpRight className="text-white/20 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" size={28} />
                 </div>
               </div>
 

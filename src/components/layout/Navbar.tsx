@@ -53,27 +53,32 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white z-50 p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-white/10 flex flex-col p-8 space-y-6 animate-in slide-in-from-top duration-300">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-lg font-serif tracking-widest"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
-          <button className="w-full py-4 border border-accent bg-accent/5 text-accent uppercase tracking-widest">
+        <div className="md:hidden fixed inset-0 z-40 bg-background/98 backdrop-blur-xl flex flex-col justify-center p-12 space-y-10 animate-in fade-in duration-500">
+          <div className="flex flex-col space-y-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-4xl font-serif tracking-[0.2em] uppercase hover:text-accent transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          <button 
+            className="w-full py-6 border border-accent bg-accent/5 text-accent uppercase tracking-[0.3em] text-xs font-bold mt-8"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Reserve Now
           </button>
         </div>

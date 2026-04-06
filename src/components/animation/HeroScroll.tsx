@@ -19,10 +19,10 @@ export function HeroScroll({ frameCount, sequencePath }: HeroScrollProps) {
     offset: ["start start", "end end"],
   });
 
-  // Complete the video animation by 80% scroll progress so it pauses on the final frame 
+  // Complete the video animation by 85% scroll progress so it pauses on the final frame 
   // before physically moving to the next section of the site.
   // We start the mapping at 25 to skip the initial black frames.
-  const frameIndex = useTransform(scrollYProgress, [0, 0.8], [25, frameCount], { clamp: true });
+  const frameIndex = useTransform(scrollYProgress, [0, 0.85], [25, frameCount], { clamp: true });
 
   useEffect(() => {
     const unsubscribe = frameIndex.on("change", (latest) => {
@@ -56,13 +56,17 @@ export function HeroScroll({ frameCount, sequencePath }: HeroScrollProps) {
   useEffect(() => {
     const handleResize = () => {
       if (!canvasRef.current) return;
-      const dpr = window.devicePixelRatio || 1;
       // Set physical dimensions in pixels
-      canvasRef.current.width = window.innerWidth * dpr;
-      canvasRef.current.height = window.innerHeight * dpr;
+      const dpr = window.devicePixelRatio || 1;
+      const width = window.innerWidth * dpr;
+      const height = window.innerHeight * dpr;
       
-      // Trigger a re-render by slightly nudging the state if needed, 
-      // but the currentFrameIndex effect will handle it.
+      canvasRef.current.width = width;
+      canvasRef.current.height = height;
+      
+      // Ensure canvas CSS dimensions match window exactly
+      canvasRef.current.style.width = `${window.innerWidth}px`;
+      canvasRef.current.style.height = `${window.innerHeight}px`;
     };
 
     handleResize();

@@ -75,13 +75,13 @@ export function VillaTransition() {
             transition={{ duration: 1 }}
             className="text-center px-12"
           >
-            <h2 className="text-6xl md:text-9xl font-serif uppercase tracking-[0.1em] opacity-80 mb-8">
+            <h2 className="text-5xl md:text-[8vw] font-serif uppercase tracking-[0.1em] opacity-60 mb-12 leading-[1.1]">
               Bespoke <br /> Sanctuaries.
             </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 opacity-50">
-              <span className="text-[10px] uppercase tracking-[0.4em]">Seaside Estates</span>
-              <span className="text-[10px] uppercase tracking-[0.4em]">Mountain Chalets</span>
-              <span className="text-[10px] uppercase tracking-[0.4em]">Penthouse Living</span>
+            <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-6 opacity-60 text-center px-4">
+              <span className="text-[9px] uppercase tracking-[0.5em] whitespace-nowrap">Seaside Estates</span>
+              <span className="text-[9px] uppercase tracking-[0.5em] whitespace-nowrap">Mountain Chalets</span>
+              <span className="text-[9px] uppercase tracking-[0.5em] whitespace-nowrap">Penthouse Living</span>
             </div>
           </motion.div>
         </div>
