@@ -6,7 +6,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer bg-background border-t border-white/5 pt-24 pb-12 px-6">
+    <footer className="footer bg-background border-t border-white/5 pt-24 pb-12 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-24">
           <div className="col-span-1 md:col-span-2">
@@ -44,7 +44,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+        <div className="border-t border-white/10 pt-32 flex flex-col md:flex-row justify-between items-center gap-10 relative z-20">
           <p className="text-[11px] uppercase tracking-[0.3em] text-white/50 text-center md:text-left">
             &copy; {currentYear} Travel Co. Bespoke Concierge. <span className="hidden md:inline">|</span> <br className="md:hidden" /> All Rights Reserved.
           </p>
@@ -55,8 +55,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-48 text-center select-none pointer-events-none opacity-[0.015]">
-          <h1 className="text-[18vw] font-serif tracking-[0.4em] uppercase leading-none">
+        <div className="mt-72 text-center select-none pointer-events-none opacity-[0.015] pb-24">
+          <h1 className="text-[20vw] font-serif tracking-[0.5em] uppercase leading-none">
             Travel Co.
           </h1>
         </div>
