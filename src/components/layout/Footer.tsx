@@ -16,7 +16,7 @@ export function Footer() {
             <p className="text-gray-400 max-w-sm text-sm font-light leading-relaxed mb-8">
               Experience the world&apos;s most exclusive destinations through our meticulously curated bespoke concierge service. We don&apos;t just plan travels; we curate memories that last a lifetime.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex gap-6">
               <Globe className="hover:text-accent cursor-pointer transition-colors" size={20} />
               <Mail className="hover:text-accent cursor-pointer transition-colors" size={20} />
               <Phone className="hover:text-accent cursor-pointer transition-colors" size={20} />
@@ -48,7 +48,7 @@ export function Footer() {
           <p className="text-[10px] uppercase tracking-[0.2em] text-white/30">
             &copy; {currentYear} Travel Co. Bespoke Concierge. All Rights Reserved.
           </p>
-          <div className="flex space-x-8 text-[10px] uppercase tracking-[0.2em] text-white/50">
+          <div className="flex gap-8 text-[10px] uppercase tracking-[0.2em] text-white/50">
             <span className="hover:text-accent cursor-pointer">Member of IATA</span>
             <span className="hover:text-accent cursor-pointer">CLIA Preferred Partner</span>
           </div>

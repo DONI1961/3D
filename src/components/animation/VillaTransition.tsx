@@ -78,7 +78,7 @@ export function VillaTransition() {
             <h2 className="text-6xl md:text-9xl font-serif uppercase tracking-[0.1em] opacity-80 mb-8">
               Bespoke <br /> Sanctuaries.
             </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-12 opacity-50">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 opacity-50">
               <span className="text-[10px] uppercase tracking-[0.4em]">Seaside Estates</span>
               <span className="text-[10px] uppercase tracking-[0.4em]">Mountain Chalets</span>
               <span className="text-[10px] uppercase tracking-[0.4em]">Penthouse Living</span>
